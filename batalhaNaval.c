@@ -5,7 +5,7 @@ int main (){
     int campo [10][10];
     char  letras[10][10] = {'A','.','B','.','C','.','D','.','E','.','F','.','G','.','H','.','I','.','J','.'};
 
-    int i, j;
+    int i, j, a;
 
     printf("-------------------------\n");
     printf("  Desafio Batalha Naval  \n");
@@ -18,15 +18,33 @@ int main (){
         }
     }
 
+
+    //---------  Criando a Cruz
     //Posiciona o navio na horizontal...
-    for(j = 1; j <= 3; j++){
-        campo[6][j] = 3; //Alterando a posição entre o 6 e J, define se fica na horizontal ou vertical...
+    for(j = 1; j <= 5; j++){
+        campo[2][j] = 3; //Alterando a posição entre o 6 e J, define se fica na horizontal ou vertical...
     }
 
     //Posiciona o navio na vertical...
-    for(i = 1; i <= 3; i++){
-        campo[i][1] = 3; //Alterando a posição entre o i e 1, define se fica na horizontal ou vertical...
+    for(i = 0; i <= 4; i++){
+        campo[i][3] = 3; //Alterando a posição entre o i e 1, define se fica na horizontal ou vertical...
     }
+
+
+    //--------  Criando o Triângulo
+    //Posiciona o navio na horizontal...
+    for(j = 3; j <= 3; j++){
+        campo[7][j] = 3; //Alterando a posição entre o 6 e J, define se fica na horizontal ou vertical...
+    }
+    //Posiciona o navio na horizontal...
+    for(j = 2; j <= 4; j++){
+        campo[8][j] = 3; //Alterando a posição entre o 6 e J, define se fica na horizontal ou vertical...
+    }
+    //Posiciona o navio na horizontal...
+    for(j = 1; j <= 5; j++){
+        campo[9][j] = 3; //Alterando a posição entre o 6 e J, define se fica na horizontal ou vertical...
+    }
+
 
     // Exibe o cabeçalho das colunas (A a J)
    printf("    %s", letras);
